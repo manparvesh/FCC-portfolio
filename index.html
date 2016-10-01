@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <script src="script.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
 
         <!-- Bootstrap -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <!-- Latest compiled JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <!-- jQuery library -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <!-- Font awesome -->
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 
@@ -26,16 +23,16 @@
         <div class="container-fluid">
             <nav>
                 <ul class="nav nav-pills">
-                    <li>
+                    <li class="navbar-item">
                         <a href="#home">Home</a>
                     </li>
-                    <li>
+                    <li class="navbar-item">
                         <a href="#portfolio">Portfolio</a>
                     </li>
-                    <li>
+                    <li class="navbar-item">
                         <a href="#about">About</a>
                     </li>
-                    <li>
+                    <li class="navbar-item">
                         <a href="#contact">Contact</a>
                     </li>
                 </ul>
@@ -43,7 +40,7 @@
         </div>
 
         <!-- Home container -->
-        <div id="home">
+        <div data-anchor="home" id="home">
             <div id="title">
                 <h1 class="text-primary text-center">Man Parvesh Singh Randhawa</h1>
                 <h3 class="text-center">Java programmer - Android developer - Photographer - Trainee Web developer</h3>
@@ -51,7 +48,7 @@
         </div>
 
         <!-- Portfolio container -->
-        <div id="portfolio">
+        <div data-anchor="portfolio" id="portfolio">
             <h2 class="page-title text-center">Portfolio</h2>
 
             <!-- the list -->
@@ -151,7 +148,7 @@
         <!-- Portfolio end -->
 
         <!-- About start -->
-        <div id="about">
+        <div data-anchor="about" id="about">
             <h2 class="page-title text-center">About</h2>
 
             <div class="row photo-bio">
@@ -171,8 +168,8 @@
         <!-- About ends -->
 
         <!-- contact start -->
-        <div id="contact">
-            <h2 class="page-title text-center">About</h2>
+        <div data-anchor="contact" id="contact">
+            <h2 class="page-title text-center">Contact</h2>
 
             <div class=" social-media">
                 <a class="media-link text-center" href="https://manparvesh.github.io/" role="button" target="_blank"><i class="fa fa-globe fa-fw"></i> Website</a>
@@ -181,5 +178,10 @@
                 <a class="media-link text-center" href="https://in.linkedin.com/in/man-parvesh-singh-randhawa-13909683" role="button" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i> LinkedIn</a>
             </div>
         </div>
+
+        <!-- jQuery library -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="js/init.js"></script>
+
     </body>
 </html>
